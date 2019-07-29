@@ -7,9 +7,12 @@ The approach taken by this library is to find a set of closed contours, labeled 
 
 Another way of thinking about this approach is: we are trying to visualize the classifier output the way most humans would, by circling groups of points that belong to the same class. We are not trying to color in all regions of space, or draw complicated boundaries that handle all of space (which is the contour/contourf approach).
 
+It's important to note that circumscribe contours do not give a faithful representation of the classifier decision boundaries. They do give a faithful representation of the classes that the classifier assigns to the data points.
+
 The contours are computed according to rules that are intended to yield a visually simple plot:
 
 - the total number of contours is kept to a minimum
-- contours are kept "as convex as possible": 
+- contours are kept "as convex as possible": sections are convex by default, concavities only introduced when necessary
+- smoothing is applied to avoid jaggedness
 
 
