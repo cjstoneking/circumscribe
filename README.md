@@ -1,7 +1,7 @@
 # circumscribe
 visualize complex classifier outputs, in a clean and polished manner
 
-This is a small Python library for visualizing the output of classifiers on points in a 2D plane, in a way that is visually cleaner than the standard approach (matplotlib contour/contourf):
+This is a small Python library for visualizing the output of classifiers on points in a 2D plane, in a way that is visually cleaner than the standard approach (applying nearest-neighbors to all points in space, then using matplotlib contour/contourf):
 
 ![circumscribe_vs_mpl_contour_03](figures/circumscribe_vs_mpl_contour_03.png?raw=true "circumscribe vs mpl contour plot")
 
