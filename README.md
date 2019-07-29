@@ -19,5 +19,6 @@ Examples:
 
 ![circumscribe_demo_nonconvex_01](figures/circumscribe_demo_nonconvex_01.png?raw=true "Example of slightly nonconvex contours")
 
+Because circumscribe forces the contours to be as convex as possible, they tend to look visually cleaner than the equivalent contours produced by the matplotlib contour function (even when smoothing is applied):
 
 ![circumscribe_vs_mpl_contour_01](figures/circumscribe_vs_mpl_contour_01.png?raw=true "circumscribe vs mpl contour plot")
