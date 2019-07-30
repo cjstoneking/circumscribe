@@ -5,7 +5,7 @@ This is a small Python library for visualizing the output of classifiers on poin
 
 The circumscribe function solves this problem by using contours that are forced to be as convex as possible, and these tend to look substantially neater:
 
-![circumscribe_vs_mpl_contour_03](figures/circumscribe_vs_mpl_contour_03.png?raw=true "circumscribe vs mpl contour plot")
+![standard_vs_circumscribe_01](figures/standard_vs_circumscribe_01.png?raw=true "circumscribe vs mpl contour plot")
 
 
 
