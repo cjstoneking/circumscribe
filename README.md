@@ -11,9 +11,7 @@ The circumscribe function solves this problem by using contours that are forced 
 
 Further details:
 
-The approach taken by this library is to find a set of closed contours, labeled according to the different classes, such that each point is enclosed by a contour of the correct class. This is subtly different from other visualization approaches: we are not trying to visualize the classifier's prediction at each point in 2D space, instead we are focusing on visualizing how it labels the individual data points, and ignoring the space that the points are embedded in. This results in a visually simpler plot.
-
-It's important to note that circumscribe contours do not give a faithful representation of the classifier decision boundaries. They do give a faithful representation of the classes that the classifier assigns to the data points.
+The approach taken by this library is to find a set of closed contours, labeled according to the different classes, such that each point is enclosed by a contour of the correct class. It's important to note that circumscribe contours do not necessarily give a faithful representation of the classifier decision boundaries. They do give a faithful representation of the classes that the classifier assigns to the data points.
 
 The contours are computed according to rules that are intended to yield a visually simple plot:
 
@@ -21,10 +19,8 @@ The contours are computed according to rules that are intended to yield a visual
 - contours are kept "as convex as possible": sections are convex by default, concavities only introduced when necessary
 - smoothing is applied to avoid jaggedness
 
-Examples:
-
 ![circumscribe_demo_nonconvex_01](figures/circumscribe_demo_nonconvex_01.png?raw=true "Example of slightly nonconvex contours")
 
 
 
-![circumscribe_vs_mpl_contour_01](figures/circumscribe_vs_mpl_contour_01.png?raw=true "circumscribe vs mpl contour plot")
+
