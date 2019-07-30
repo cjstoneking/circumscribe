@@ -1,11 +1,13 @@
 # circumscribe
 visualize complex classifier outputs, in a clean and polished manner
 
-This is a small Python library for visualizing the output of classifiers on points in a 2D plane, in a way that is visually cleaner than the standard approach (applying nearest-neighbors to all points in space, then using matplotlib contour/contourf):
+This is a small Python library for visualizing the output of classifiers on points in a 2D plane. It is intended for the situation where we have used a black-box classifier (e.g. lightGBM, xgboost, random forest...), so although we have predicted labels for the data points, we don't have a simple representation of the decision boundary. In this case, the standard approach for visualizing the classifier output is to apply nearest-neighbors classification to all points in space, then plot the resulting contours directly (e.g. with matplotlib contour/contourf). This will often result in highly irregular contours that are not visually clean. 
+
+The circumscribe function solves this problem by using contours that are forced to be as convex as possible, and these tend to look substantially neater:
 
 ![circumscribe_vs_mpl_contour_03](figures/circumscribe_vs_mpl_contour_03.png?raw=true "circumscribe vs mpl contour plot")
 
-The circumscribe function uses contours that are forced to be as convex as possible, and these tend to look substantially tidier than the equivalent contours produced by the matplotlib contour function (even when smoothing is applied).
+
 
 Further details:
 
