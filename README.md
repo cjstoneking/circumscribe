@@ -20,6 +20,8 @@ The contours are computed according to rules that are intended to yield a visual
 
 ![circumscribe_contour_labeled_figure_02](figures/circumscribe_contour_labeled_figure_02.png?raw=true "Example of slightly nonconvex contours")
 
+<img src="https://raw.githubusercontent.com/cjstoneking/circumscribe/master/figures/circumscribe_contour_labeled_figure_02.png" width="300" height="300">
+
 
 
 
