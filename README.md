@@ -18,9 +18,9 @@ The contours are computed according to rules that are intended to yield a visual
 - contours are kept "as convex as possible": sections are convex by default, concavities only introduced when necessary
 - smoothing is applied to avoid jaggedness
 
-![circumscribe_contour_labeled_figure_02](figures/circumscribe_contour_labeled_figure_02.png?raw=true "Example of slightly nonconvex contours")
 
-<img src="https://raw.githubusercontent.com/cjstoneking/circumscribe/master/figures/circumscribe_contour_labeled_figure_02.png" width="300" height="300">
+
+<img src="https://raw.githubusercontent.com/cjstoneking/circumscribe/master/figures/circumscribe_contour_labeled_figure_02.png" width="500" height="400">
 
 
 
